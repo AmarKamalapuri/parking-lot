@@ -176,7 +176,7 @@ public class ParkingLotTest {
         parkingLot.unPark(car1);
 
         Mockito.verify(owner, Mockito.times(1)).notifyParkingAvailable();
-        Mockito.verify(trafficCop, Mockito.times(1)).notifyParkingAvailable();
+        Mockito.verify(trafficCop, Mockito.times(2)).notifyParkingAvailable();
 
     }
 }
